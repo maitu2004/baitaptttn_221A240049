@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tra cứu thông tin sinh viên – Đại học Văn Hiến</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header><button class="burger" id="bg" aria-label="Menu">☰</button><div class="lg">VHU</div><h1>TRƯỜNG ĐẠI HỌC VĂN HIẾN</h1>
+<div class="sp"><span class="bell">🔔<i>3</i></span><div class="ava">SV</div></div></header>
+<div class="layout">
+<aside id="sd">
+<div class="pf"><div class="ava">NA</div><div><b>Nguyễn Văn An</b><small>Sinh viên - 221A000001</small></div></div>
+<div id="nav"></div></aside>
+<main><section id="v-search">
+<h2 class="ttl"><i>›</i>TRA CỨU THÔNG TIN SINH VIÊN</h2>
+<div class="warn"><b>Lưu ý:</b> Dữ liệu trên trang là dữ liệu mẫu (giả lập) để minh họa giao diện.</div>
+<div class="card"><div class="ch">Tìm kiếm sinh viên</div><div class="cb"><div class="grid">
+<div class="f"><small>Mã số sinh viên / Họ tên</small><input id="q" placeholder="VD: 221A000001 hoặc Nguyễn Văn An" autocomplete="off"></div>
+<div class="f"><small>Ngành học</small><select id="nganh"><option value="">Tất cả ngành</option></select></div>
+<div class="f"><small>Khóa học</small><select id="khoa"><option value="">Tất cả khóa</option></select></div>
+<button class="btn o" id="reset" type="button">Đặt lại</button></div></div></div>
+<div class="card"><div class="ch">Kết quả tra cứu</div><div class="meta"><span id="count"></span><span>Nhấn vào một dòng để xem chi tiết</span></div>
+<div class="tw"><table><thead><tr><th>MSSV</th><th>Họ và tên</th><th>Ngành học</th><th>Khóa</th><th>Lớp</th><th>Trạng thái</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div id="empty" class="empty" hidden>Không tìm thấy sinh viên phù hợp.</div></div>
+</section><section id="v-page" hidden></section></main></div>
+<div class="modal" id="modal"><div class="dlg"><div class="dt">THÔNG TIN SINH VIÊN</div><div class="dc">
+<div class="who"><b id="dn"></b><small id="ds"></small></div>
+<div class="sec">Thông tin cá nhân</div><div class="g3" id="g1"></div>
+<div class="sec">Thông tin học tập</div><div class="g3" id="g2"></div></div>
+<div class="df"><button class="btn" id="close" type="button">Đóng</button></div></div></div>
+<script src="script.js"></script></body></html>
